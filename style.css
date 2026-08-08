@@ -54,7 +54,77 @@
     margin-bottom: 10% !important;
     padding-left: 15px !important;
 }
+/*---About Page---*/
+.about-section {
+    margin: 30px;
+    text-align: center;
+}
 
+.about-section2 {
+    padding: 80px 10%;
+}
+
+.about-section2 .paragraph {
+    max-width: 900px;
+    margin: 0 auto;
+    text-align: left;
+}
+
+.about-section1 h6 {
+    font-family: sancreek, sans-serif;
+    font-size: 1rem;
+    color: #635951;
+}
+.about-section1 h1 {
+    font-family: 'Glacial Indifference', sans-serif;
+    font-size: 2.4rem;
+    font-weight: 700;
+}
+
+.about-section2 {
+    padding: 80px;
+    text-align: center;
+}
+
+.paragraph h1 {
+    font-family: "Nata Sans", sans-serif;
+    font-size: 2.6rem;
+    font-weight: 900;
+    margin-bottom: 20px;
+
+    padding-right: 10%;
+    padding-top: 18%;
+}
+
+.paragraph h2 {
+    font-family: "Nata Sans", sans-serif;
+    font-size: 2.8rem;
+    font-weight: 900;
+    background: linear-gradient(90deg, #2c2424 0%, #053563 100%);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    background-clip: text;
+    color: transparent;
+
+}
+
+.anshika {
+    background: linear-gradient(90deg, #2c2424 29%, #092341 100%);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    background-clip: text;
+    color: transparent;
+
+}
+
+.paragraph p {
+    font-family: "Poppins", sans-serif;
+    color: #776f68;
+    padding-top: 5%;
+    font-size: 1.5rem;
+    letter-spacing: 1px;
+    line-height: 1.2;
+}
 
 
 /*--- services page ---*/
