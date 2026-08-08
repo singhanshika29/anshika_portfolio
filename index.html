@@ -1,0 +1,373 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Home</title>
+    <link rel="stylesheet" href="./style.css">
+<link href="https://fonts.cdnfonts.com/css/glacial-indifference-2" rel="stylesheet">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600;700&display=swap" rel="stylesheet">
+    
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet">
+    
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
+    
+    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
+    <style>
+        .nav-text {
+            --primary-dark: #000000;
+            --accent-teal: #031215;
+            --text-gray: #555;
+            --light-bg: #faf8f8;
+            --transition: all 0.3s ease-in-out;
+        }
+
+        body {
+            font-family: 'Poppins', sans-serif;
+            overflow-x: hidden;
+            scroll-behavior: smooth;
+        }
+
+        .navbar {
+            background: rgba(255, 255, 255, 0.95);
+            backdrop-filter: blur(10px);
+            box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1);
+            transition: var(--transition);
+        }
+
+        .navbar-brand img {
+            max-height: 90px;
+            transition: transform 0.3s;
+        }
+
+        .navbar-brand:hover img {
+            transform: scale(1.1);
+        }
+
+        .nav-link {
+            font-weight: 600;
+            color: var(--primary-dark) !important;
+            margin: 0 10px;
+            position: relative;
+        }
+
+        .nav-link::after {
+            content: '';
+            position: absolute;
+            width: 0;
+            height: 2px;
+            bottom: 0;
+            left: 0;
+            background-color: var(--accent-teal);
+            transition: var(--transition);
+        }
+
+        .nav-link:hover::after {
+            width: 100%;
+        }
+
+        .btn-contact-nav {
+            background-color: var(--primary-dark);
+            color: white !important;
+            border-radius: 25px;
+            padding: 8px 25px;
+            transition: var(--transition);
+        }
+        .btn-contact-nav:hover {
+            background-color: var(--accent-teal);
+            color: rgb(255, 255, 255) !important;
+            transform: translateY(-3px);
+        }
+            .contact-section {
+            background-color:white;
+            padding: 1rem 0;
+        }
+
+        .contact-title {
+            font-weight: 700;
+            font-size: 2.5rem;
+            text-transform: uppercase;
+            background: linear-gradient(90deg, #3a3a32, #0b0909);
+            -webkit-background-clip: text;
+            -webkit-text-fill-color: transparent;
+            background-clip: text;
+        
+            margin-bottom: 4rem;
+        }
+
+        .contact-form .form-group {
+            margin-bottom: 3rem;
+        }
+
+        .contact-form .form-label {
+            color: #000000;
+            font-size: 0.9rem;
+            text-transform: uppercase;
+            letter-spacing: 1px;
+            margin-bottom: 1rem;
+        }
+
+        .form-control-custom {
+            background-color: transparent;
+            border: none;
+            border-bottom: 1px solid #555;
+            border-radius: 0;
+            color: #fff;
+            padding: 0.5rem 0;
+            font-size: 1.1rem;
+        }
+
+        .form-control-custom:focus {
+            background-color: transparent;
+            color: #0e0c0c;
+            border-color: #000000;
+            box-shadow: none;
+        }
+
+        .btn-send {
+            background-color: transparent;
+            border: 2px solid #0a0909;
+            color: #080807;
+            padding: 0.8rem 2.5rem;
+            font-weight: 500;
+            letter-spacing: 1px;
+            text-transform: uppercase;
+            transition: all 0.3s ease;
+            border-radius: 5px;
+        }
+
+        .btn-send:hover {
+            background-color: #060403;
+            color: #edf3fa;
+        }
+    </style>
+</head>
+
+<body>
+    <section class="nav-text">
+    <nav class="navbar navbar-expand-lg sticky-top navbar-light">
+        <div class="container">
+            <a class="navbar-brand" href="#">
+                <img src="./image/unnamed__2_-removebg-preview.png" width="120" alt="Logo">
+            </a>
+            
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+
+            <div class="collapse navbar-collapse" id="navbarNav">
+                <ul class="navbar-nav mx-auto">
+                    <li class="nav-item"><a class="nav-link" href="index.html">Home</a></li>
+                    <li class="nav-item"><a class="nav-link" href="about.html">About</a></li>
+                    <li class="nav-item"><a class="nav-link" href="skills.html">Services</a></li>
+                    <li class="nav-item"><a class="nav-link" href="./anshika_cv_.pdf" download>Resume</a></li>
+                    <li class="nav-item"><a class="nav-link" href="blog.html">Blog</a></li>
+                </ul>
+                <div class="d-flex">
+                    <a href="contact.html" class="btn btn-contact-nav">Contact Us</a>
+                </div>
+            </div>
+        </div>
+    </nav>
+</section>
+    <section class="header-text d-flex align-items-center ">
+        <div class="row text-header">
+            <div class="col-md-6 text-anshika">
+                <h4 class="pt-5">I'M GLAD YOU ARE HERE.</h4>
+                <h1 class="pt-3"> HI I'M  <span class="anshika">ANSHIKA SINGH</span></h1>
+                <h5>Web Developer | Digital Marketing Enthusiast | AI</h5>
+
+                <p> I design and develop responsive, visually appealing websites, optimize digital presence through
+                    strategic marketing, and leverage AI to deliver innovative, data-driven solutions. My work blends
+                    creativity, technology, and strategy to enhance user experience, boost engagement, and drive
+                    measurable business growth.</p>
+                <div class="button-cv">
+                    <button type="button" class="button mt-2">DOWNLOAD CV</button>
+                </div>
+
+
+            </div>
+            <div class="col-md-6 image-anshika">
+                <img src="./image/image-1.jpeg" alt="">
+            </div>
+        </div>
+
+    </section>
+    <section>
+    </section>
+    <section class="service-image">
+        <div class=" service-text">
+            <h6 class="text-center">Services</h6>
+            <h1 class="text-center">My Services</h1>
+
+        </div>
+        <div class="container-fluid">
+            <div class="row section-icon container-icon  justify-content-center">
+                <div class="col-sm-4 icon-section">
+                    <div class="card card-title ">
+                        <img src="./image/app-development.png" class="card-img-top" alt="...">
+                        <div class="card-body">
+                            <h5 class="text-center">Web desgin</h5>
+                            <p class="card-text">
+
+                                Creating visually appealing, responsive, and user-friendly websites that reflect your
+                                brand and engage visitors.</p>
+                                
+                        </div>
+                    </div>
+                </div>
+                <div class="col-sm-4 icon-section">
+                    <div class="card card-title">
+                        <img src="./image/coding (1).png" class="card-img-top" alt="...">
+                        <div class="card-body">
+                            <h5 class=" text-center">Web Development</h5>
+                            <p class="card-text">Building responsive, secure, and high-performing websites with clean
+                                code and modern technologies.</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-sm-4 icon-section">
+                    <div class="card card-title">
+                        <img src="./image/mobile-development.png" class="card-img-top" alt="...">
+                        <div class="card-body">
+                            <h5 class="text-center">Mobile Development</h5>
+                            <p class="card-text">Delivering innovative and user-friendly mobile applications for Android
+                                and iOS platforms. </p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+    <section>
+        <div class="container container-video mt-4">
+            <div class="video-container">
+
+                <video autoplay muted loop>
+                    <source src="./image/7529-201118756.mp4" type="video/mp4">
+                </video>
+                <div class="text-center my-4 video-text">
+                    <h4>Get Started</h4>
+                    <h1>Let’s do something new <br> with me!</h1>
+
+                    <button type="button" class="button mt-2">Contact</button>
+
+
+                </div>
+            </div>
+
+        </div>
+    </section>
+   <!-- Contact Section -->
+        <section class="contact-section mt-4">
+            <div class="container">
+                <div class="row justify-content-center">
+                    <div class="col-lg-8">
+                        <h2 class="text-center contact-title">CONTACT ME</h2>
+                        <form class="contact-form">
+                            <div class="row">
+                                <div class="col-md-6">
+                                    <div class="form-group">
+                                        <label for="name" class="form-label">Name *</label>
+                                        <input type="text" class="form-control form-control-custom" id="name" required>
+                                    </div>
+                                </div>
+                                <div class="col-md-6">
+                                    <div class="form-group">
+                                        <label for="email" class="form-label">Email *</label>
+                                        <input type="email" class="form-control form-control-custom" id="email"
+                                            required>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="form-group">
+                                <label for="message" class="form-label">Message *</label>
+                                <textarea class="form-control form-control-custom" id="message" rows="4"
+                                    required></textarea>
+                            </div>
+                              <div class="text-center mt-5">
+                            <button type="submit" class="btn submit-btn">Send Message</button>
+                        </div>
+                        </form>
+                    </div>
+                </div>
+            </div>
+        </section>
+    <footer class="footer-dark ">
+        <div class="container">
+            <div class="row g-4">
+                <div class="col-6 col-md-3 col-lg-2">
+                    <h5 class="footer-heading">Quick Link</h5>
+                    <ul class="list-unstyled footer-links">
+                        <li><a href="index.html">Home</a></li>
+                        <li><a href="about.html">About</a></li>
+                        <li><a href="skills.html">Services</a></li>
+                        <li><a href="#">Portfolio</a></li>
+                        <li><a href="contact.html">Contact</a></li>
+                    </ul>
+                </div>
+
+                <div class="col-6 col-md-3 col-lg-2">
+                    <h5 class="footer-heading">Services</h5>
+                    <ul class="list-unstyled footer-links">
+                        <li><a href="#">Web Design</a></li>
+                        <li><a href="#">Web Development</a></li>
+                        <li><a href="#">Mobile Development</a></li>
+                        <li><a href="#">Digital Marketing</a></li>
+                    </ul>
+                </div>
+
+                <div class="col-md-6 col-lg-3">
+                    <h5 class="footer-heading">Contact</h5>
+                    <div class="contact-details">
+                        <p><i class="fas fa-envelope me-2"></i> singhanshika29.as@gmail.com</p>
+                        <p><i class="fas fa-phone me-2"></i> +919889747955</p>
+                        <div class="social-box mt-3">
+                            <a href="#" class="social-icon"><i class="fab fa-facebook-f"></i></a>
+                            <a href="#" class="social-icon"><i class="fab fa-linkedin-in"></i></a>
+                            <a href="#" class="social-icon"><i class="fab fa-github"></i></a>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="col-md-12 col-lg-5">
+                    <div class="consult-card">
+                        <h3 class="mb-4">Let's Make Consultation With Us!</h3>
+                        <form id="consultationForm">
+                            <div class="custom-input-group">
+                                <input type="email" class="form-control text-light" placeholder="Enter your email"
+                                    required>
+                                <button class="btn btn-send bg-warning" type="submit">
+                                    <i class="fas fa-paper-plane "></i>
+                                </button>
+                            </div>
+                        </form>
+                    </div>
+                </div>
+            </div>
+
+            <hr class="mt-5 footer-divider">
+            <div class="text-center copyright-text">
+                <p class="mb-0">&copy; Copyright <span id="year"></span> <span class="text-warning">Anshika Singh</span>
+                    All Rights Reserved</p>
+            </div>
+        </div>
+    </footer>
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"></script>
+    <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+    <script>
+        AOS.init({ duration: 1000, once: true });
+        document.getElementById('year').textContent = new Date().getFullYear();
+    </script>
+    <script>
+  window.chatbaseConfig = {
+    chatbotId: "CwRLD_LnoqzAT5N8irs4w",
+  }
+</script>
+<script src="https://www.chatbase.co/embed.min.js" defer></script
+</body>
+
+</html>

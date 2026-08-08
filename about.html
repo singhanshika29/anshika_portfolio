@@ -1,0 +1,541 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="./style.css">
+<link href="https://fonts.cdnfonts.com/css/glacial-indifference-2" rel="stylesheet">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600;700&display=swap" rel="stylesheet">
+    
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet">
+    
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
+    
+    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
+    <style>
+        .nav-text {
+            --primary-dark: #000000;
+            --accent-teal: #031215;
+            --text-gray: #555;
+            --light-bg: #faf8f8;
+            --transition: all 0.3s ease-in-out;
+        }
+
+        body {
+            font-family: 'Poppins', sans-serif;
+            overflow-x: hidden;
+            scroll-behavior: smooth;
+        }
+
+        .navbar {
+            background: rgba(255, 255, 255, 0.95);
+            backdrop-filter: blur(10px);
+            box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1);
+            transition: var(--transition);
+        }
+
+        .navbar-brand img {
+            max-height: 90px;
+            transition: transform 0.3s;
+        }
+
+        .navbar-brand:hover img {
+            transform: scale(1.1);
+        }
+
+        .nav-link {
+            font-weight: 600;
+            color: var(--primary-dark) !important;
+            margin: 0 10px;
+            position: relative;
+        }
+
+        .nav-link::after {
+            content: '';
+            position: absolute;
+            width: 0;
+            height: 2px;
+            bottom: 0;
+            left: 0;
+            background-color: var(--accent-teal);
+            transition: var(--transition);
+        }
+
+        .nav-link:hover::after {
+            width: 100%;
+        }
+
+        .btn-contact-nav {
+            background-color: var(--primary-dark);
+            color: white !important;
+            border-radius: 25px;
+            padding: 8px 25px;
+            transition: var(--transition);
+        }
+.btn-contact-nav:hover {
+            background-color: var(--accent-teal);
+            color: rgb(255, 255, 255) !important;
+            transform: translateY(-3px);
+        }
+
+
+
+        /* --- Hero/About Section --- */
+        .about-section {
+            background: linear-gradient(rgba(0, 0, 0, 0.9), rgba(0, 0, 0, 0.9)), url('./image/photo-1497215728101-856f4ea42174.avif') no-repeat center center/cover;
+            background-size: cover;
+            color: white;
+            padding: 100px 0 60px;
+            text-align: center;
+        }
+
+        .about-section2 {
+            padding: 80px 10%;
+            align-items: center;
+        }
+
+        .paragraph h1 {
+            font-weight: 700;
+            color: var(--primary-dark);
+        }
+
+        .img-thumbnail-custom {
+            border-radius: 30px;
+            box-shadow: 20px 20px 0px var(--accent-teal);
+            transition: var(--transition);
+        }
+
+        .img-thumbnail-custom:hover {
+            transform: translate(-10px, -10px);
+            box-shadow: 30px 30px 0px var(--primary-dark);
+        }
+        .about-section2 {
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+}
+
+/* Mobile Devices (Stacked) */
+@media (max-width: 767px) {
+    .about-section2 .col-6 {
+        flex: 0 0 100%; /* Make each div 100% width */
+        max-width: 100%;
+        text-align: center; /* Optional: Centers text for better mobile look */
+        margin-bottom: 20px;
+    }
+
+    .about-section2 h1 {
+        font-size: 1.8rem; /* Shrink text slightly for small screens */
+    }
+
+    .about-section2 .remove {
+        order: -1; /* Optional: Moves the image above the text on mobile */
+    }
+}
+    </style>
+
+</head>
+
+<body>
+
+    <section class="nav-text">
+        <nav class="navbar navbar-expand-lg sticky-top">
+            <div class="container">
+                <a class="navbar-brand" href="#">
+                    <img src="./image/unnamed__2_-removebg-preview.png" width="120" alt="Logo">
+                </a>
+                <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav">
+                    <span class="navbar-toggler-icon"></span>
+                </button>
+                <div class="collapse navbar-collapse" id="navbarNav">
+                    <ul class="navbar-nav mx-auto">
+                        <li class="nav-item"><a class="nav-link" href="index.html">Home</a></li>
+                        <li class="nav-item"><a class="nav-link" href="about.html">About</a></li>
+                        <li class="nav-item"><a class="nav-link" href="skills.html">Services</a></li>
+                        <li class="nav-item"><a class="nav-link" href="./anshika_cv_.pdf" download>Resume</a></li>
+                        <li class="nav-item"><a class="nav-link" href="blog.html">Blog</a></li>
+                    </ul>
+                    <a href="contact.html" class="btn btn-contact-nav">Contact Us</a>
+                </div>
+            </div>
+        </nav>
+
+        <header class="about-section">
+            <div class="container" data-aos="fade-up">
+                <h6>Home / About Me</h6>
+                <h1 class="display-3 fw-bold">About Me</h1>
+            </div>
+        </header>
+
+
+        <div class="row about-section2">
+            <div class="col-6 paragraph">
+                <h1>Web Developer | Digital </h1>
+                <h2> Marketing Enthusiast | AI</h2>
+                <p>I design and develop responsive, visually appealing websites, optimize digital presence through
+                    strategic
+                    marketing, and leverage AI to deliver innovative, data-driven solutions. My work blends creativity,
+                    technology, and strategy to enhance user experience, boost engagement, and drive measurable business
+                    growth.</p>
+
+                <a target="_blank" href="./anshika_cv_.pdf" download class="btn btn-contact buttonn "
+                    role="button">DOWNLOAD CV</a>
+
+            </div>
+            <div class="col-6 remove ">
+                <img src="./image/file_00000000249c82088dea738a2e079159.png" alt="Anshika Singh" class="img-fluid img-thumbnail">
+            </div>
+        </div>
+
+    </section>
+
+
+    <section class="header-title-2">
+        <div class="container-fluid p-5">
+            <div class="row">
+                <div class="col-12">
+                    <h3 class="header-title text-center ">Skills</h3>
+
+
+                </div>
+                <div class="mx-auto" style="width: 50px; height: 3px; background: #d4af37; margin-bottom: 1px;"></div>
+            </div>
+
+            <div class="row g-0 mt-5">
+                <div class="col-md-6 col-lg-4">
+                    <div class="skill-box bg-white-box">
+                        <div class="icon-large"><i class="fa-solid fa-code"></i></div>
+                        <h2>01. Frontend</h2>
+                        <p>Developing interfaces that are as functional as they are beautiful.</p>
+                        <ul class="skill-list">
+                            <li>HTML</li>
+                            <li>CSS</li>
+                            <li>JavaScript</li>
+                            <li>Bootstrap</li>
+                        </ul>
+                    </div>
+                </div>
+
+                <div class="col-md-6 col-lg-4">
+                    <div class="skill-box bg-black-box">
+                        <div class="icon-large"><i class="fa-solid fa-server"></i></div>
+                        <h2>02. Backend</h2>
+                        <p>Architecting the hidden systems that power modern applications.</p>
+                        <ul class="skill-list">
+                            <li>MySQL</li>
+                            <li>Php</li>
+                            <li>Phpmyadmin</li>
+                        </ul>
+                    </div>
+                </div>
+
+                <div class="col-md-12 col-lg-4">
+                    <div class="skill-box bg-white-box">
+                        <div class="icon-large"><i class="fa-solid fa-terminal"></i></div>
+                        <h2>03. Systems</h2>
+                        <p>Deploying, scaling, and maintaining high-availability environments.</p>
+                        <ul class="skill-list">
+                            <li>AWS</li>
+                            <li> Git/GitHub</li>
+                            <li>Figma</li>
+                            <li>AI Tools</li>
+                                <li>Wordpress</li>
+                        </ul>
+                    </div>
+                </div>
+
+            </div>
+    </section>
+    <section>
+        <div>
+            <h3 class="text-center text-dark work-head">My Work</h3>
+        </div>
+        <div class="mx-auto" style="width: 50px; height: 3px; background: #d4af37; margin-bottom: 2px;"></div>
+       <div class="container py-5">
+    <div class="row g-4">
+        
+        <div class="col-12 col-sm-6 col-md-3">
+            <div class="logo-card">
+                <div class="image-box">
+                    <img src="./image/logo.jpeg" alt="">
+                </div>
+                <div class="card-body-custom text-center">
+                    <h5>Dento Clinic</h5>
+                    <a href="#" class="btn btn-outline-dark btn-sm px-4">Live Preview</a>
+                </div>
+            </div>
+        </div>
+
+        <div class="col-12 col-sm-6 col-md-3">
+            <div class="logo-card">
+                <div class="image-box">
+                    <img src="./image/phoenix-logo-1-scaled-e1764781592550.png" alt="">
+                </div>
+                <div class="card-body-custom text-center">
+                    <h5>Phoenix Entertainment</h5>
+                    <a href="#" class="btn btn-outline-dark  btn-sm px-4">Live Preview</a>
+                </div>
+            </div>
+        </div>
+
+        <div class="col-12 col-sm-6 col-md-3">
+            <div class="logo-card">
+                <div class="image-box">
+                    <img src="./image/unnamed (2).png" alt="">
+                </div>
+                <div class="card-body-custom text-center">
+                    <h5>Portfolio</h5>
+                    <a href="#" class="btn btn-outline-dark btn-sm px-4">Live Preview</a>
+                </div>
+            </div>
+        </div>
+
+        <div class="col-12 col-sm-6 col-md-3">
+            <div class="logo-card">
+                <div class="image-box">
+                    <img src="./image/csb.jpg" alt="">
+                </div>
+                <div class="card-body-custom text-center">
+                    <h5 class="text-dark">Chai Sutta Bar</h5>
+                    <a href="#" class="btn btn-outline-dark btn-sm px-4">Live Preview</a>
+                </div>
+            </div>
+        </div>
+
+    </div>
+</div>
+<div class="container">
+    <div class="row g-4">
+        
+        <div class="col-12 col-sm-6 col-md-3">
+            <div class="logo-card">
+                <div class="image-box">
+                    <img src="./image/tic tac toe.jpg" alt="">
+                </div>
+                <div class="card-body-custom text-center">
+                    <h5>Tic Tac Toe</h5>
+                    <a href="#" class="btn btn-outline-dark btn-sm px-4">Live Preview</a>
+                </div>
+            </div>
+        </div>
+
+        <div class="col-12 col-sm-6 col-md-3">
+            <div class="logo-card">
+                <div class="image-box">
+                    <img src="./image/weather.jpg" alt="">
+                </div>
+                <div class="card-body-custom text-center">
+                    <h5>Weather API key</h5>
+                    <a href="#" class="btn btn-outline-dark btn-sm px-4">Live Preview</a>
+                </div>
+            </div>
+        </div>
+
+        <div class="col-12 col-sm-6 col-md-3">
+            <div class="logo-card">
+                <div class="image-box">
+                    <img src="./image/87f2f8f7-5d69-4b87-a8c2-4131b5a7842b.jpg" alt="">
+                </div>
+                <div class="card-body-custom text-center">
+                    <h5>Funnel portfolio</h5>
+                    <a href="#" class="btn btn-outline-dark btn-sm px-4">Live Preview</a>
+                </div>
+            </div>
+        </div>
+
+        <div class="col-12 col-sm-6 col-md-3">
+            <div class="logo-card">
+                <div class="image-box">
+                    <img src="./image/dashboard.jpg" alt="">
+                </div>
+                <div class="card-body-custom text-center">
+                    <h5 class="text-dark">Dashboard</h5>
+                    <a href="#" class="btn btn-outline-dark btn-sm px-4">Live Preview</a>
+                </div>
+            </div>
+        </div>
+
+    </div>
+</div>
+    </section>
+    <section class="resume-section py-5" id="resume" style="background-color: #fdfdfd;">
+        <div class="container">
+            <div class="text-center mb-5" data-aos="fade-up">
+                <h6 style="color: #d4af37; text-transform: uppercase; letter-spacing: 2px; font-weight: 600;">Resume
+                </h6>
+                <h2 style="color: #2d3436; font-weight: 700; font-size: 2.5rem;">Education & Experience</h2>
+                <div class="mx-auto" style="width: 50px; height: 3px; background: #d4af37; margin-top: 10px;"></div>
+            </div>
+
+            <div class="row g-5">
+                <div class="col-lg-6" data-aos="fade-right">
+                    <h3 class="mb-4"
+                        style="color: #2d3436; font-weight: 600; border-bottom: 2px solid #eee; padding-bottom: 10px;">
+                        <i class="fas fa-graduation-cap me-2" style="color: #d4af37;"></i> Education
+                    </h3>
+
+                    <div class="timeline-container">
+                        <div class="timeline-item"
+                            style="border-left: 2px solid #d4af37; padding-left: 25px; position: relative; padding-bottom: 30px;">
+                            <div
+                                style="position: absolute; left: -9px; top: 0; width: 16px; height: 16px; background: #2d3436; border-radius: 50%; border: 3px solid #fff;">
+                            </div>
+                            <h4 style="font-size: 1.25rem; font-weight: 700; margin-bottom: 5px;">Bachelor of Arts</h4>
+                            <span
+                                style="background: #2d3436; color: #fff; padding: 2px 12px; border-radius: 20px; font-size: 0.85rem;">2022
+                                - 2025</span>
+                            <p class="mt-2 text-muted">Lucknow University</p>
+                        </div>
+
+                        <div class="timeline-item"
+                            style="border-left: 2px solid #d4af37; padding-left: 25px; position: relative; padding-bottom: 30px;">
+                            <div
+                                style="position: absolute; left: -9px; top: 0; width: 16px; height: 16px; background: #2d3436; border-radius: 50%; border: 3px solid #fff;">
+                            </div>
+                            <h4 style="font-size: 1.25rem; font-weight: 700; margin-bottom: 5px;">Intermediate</h4>
+                            <span
+                                style="background: #2d3436; color: #fff; padding: 2px 12px; border-radius: 20px; font-size: 0.85rem;">2020
+                                - 2022</span>
+                            <p class="mt-2 text-muted">HAL Lucknow</p>
+                        </div>
+
+                        <div class="timeline-item"
+                            style="border-left: 2px solid #d4af37; padding-left: 25px; position: relative;">
+                            <div
+                                style="position: absolute; left: -9px; top: 0; width: 16px; height: 16px; background: #2d3436; border-radius: 50%; border: 3px solid #fff;">
+                            </div>
+                            <h4 style="font-size: 1.25rem; font-weight: 700; margin-bottom: 5px;">Program in Web
+                                Designing & Development</h4>
+                            <span
+                                style="background: #2d3436; color: #fff; padding: 2px 12px; border-radius: 20px; font-size: 0.85rem;">2025</span>
+                            <p class="mt-2 text-muted">Zee Institute of Creative Art</p>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="col-lg-6" data-aos="fade-left">
+                    <h3 class="mb-4"
+                        style="color: #2d3436; font-weight: 600; border-bottom: 2px solid #eee; padding-bottom: 10px;">
+                        <i class="fas fa-briefcase me-2" style="color: #d4af37;"></i> Professional Experience
+                    </h3>
+
+                    <div class="timeline-container">
+                        <div class="timeline-item"
+                            style="border-left: 2px solid #d4af37; padding-left: 25px; position: relative;">
+                            <div
+                                style="position: absolute; left: -9px; top: 0; width: 16px; height: 16px; background: #2d3436; border-radius: 50%; border: 3px solid #fff;">
+                            </div>
+                            <h4 style="font-size: 1.25rem; font-weight: 700; margin-bottom: 5px;">Web Developer Intern
+                            </h4>
+                            <span
+                                style="background: #d4af37; color: #000; padding: 2px 12px; border-radius: 20px; font-size: 0.85rem; font-weight: 600;">April
+                                2025 - June 2025</span>
+                            <p class="mt-2 fw-bold" style="color: #2d3436;">Lucknow (Hybrid)</p>
+                            <ul style="color: #636e72; font-size: 0.95rem; padding-left: 20px;">
+                                <li class="mb-2">Assisted in designing and developing responsive websites using HTML,
+                                    CSS, and JavaScript.</li>
+                                <li class="mb-2">Collaborated on UI/UX designs through Figma to ensure visually
+                                    appealing and user-friendly interfaces.</li>
+                                <li>Explored and implemented AI-based tools to enhance website functionality and
+                                    streamline development workflows.</li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+    <section>
+        <div class="container container-video mt-4">
+            <div class="video-container">
+
+                <video autoplay muted loop>
+                    <source src="./image/7529-201118756.mp4" type="video/mp4">
+                </video>
+                <div class="text-center my-4 video-text">
+                    <h4>Get Started</h4>
+                    <h1>Let’s do something new <br> with me!</h1>
+
+                    <button type="button" class="button mt-2 ">Contact</button>
+
+
+                </div>
+            </div>
+
+        </div>
+    </section>
+
+    <footer class="footer-dark ">
+        <div class="container">
+            <div class="row g-4">
+                <div class="col-6 col-md-3 col-lg-2">
+                    <h5 class="footer-heading">Quick Link</h5>
+                    <ul class="list-unstyled footer-links">
+                        <li><a href="index.html">Home</a></li>
+                        <li><a href="about.html">About</a></li>
+                        <li><a href="skills.html">Services</a></li>
+                        <li><a href="#">Portfolio</a></li>
+                        <li><a href="contact.html">Contact</a></li>
+                    </ul>
+                </div>
+
+                <div class="col-6 col-md-3 col-lg-2">
+                    <h5 class="footer-heading">Services</h5>
+                    <ul class="list-unstyled footer-links">
+                        <li><a href="#">Web Design</a></li>
+                        <li><a href="#">Web Development</a></li>
+                        <li><a href="#">Mobile Development</a></li>
+                        <li><a href="#">Digital Marketing</a></li>
+                    </ul>
+                </div>
+
+                <div class="col-md-6 col-lg-3">
+                    <h5 class="footer-heading">Contact</h5>
+                    <div class="contact-details">
+                        <p><i class="fas fa-envelope me-2"></i> singhanshika29.as@gmail.com</p>
+                        <p><i class="fas fa-phone me-2"></i> +919889747955</p>
+                        <div class="social-box mt-3">
+                            <a href="#" class="social-icon"><i class="fab fa-facebook-f"></i></a>
+                            <a href="#" class="social-icon"><i class="fab fa-linkedin-in"></i></a>
+                            <a href="#" class="social-icon"><i class="fab fa-github"></i></a>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="col-md-12 col-lg-5">
+                    <div class="consult-card">
+                        <h3 class="mb-4">Let's Make Consultation With Us!</h3>
+                        <form id="consultationForm">
+                            <div class="custom-input-group">
+                                <input type="email" class="form-control text-light" placeholder="Enter your email"
+                                    required>
+                                <button class="btn btn-send bg-warning" type="submit">
+                                    <i class="fas fa-paper-plane "></i>
+                                </button>
+                            </div>
+                        </form>
+                    </div>
+                </div>
+            </div>
+
+            <hr class="mt-5 footer-divider">
+            <div class="text-center copyright-text">
+                <p class="mb-0">&copy; Copyright <span id="year"></span> <span class="text-warning">Anshika Singh</span>
+                    All Rights Reserved</p>
+            </div>
+        </div>
+    </footer>
+   
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"></script>
+    <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+    <script>
+        AOS.init({ duration: 1000, once: true });
+        document.getElementById('year').textContent = new Date().getFullYear();
+    </script>
+</body>
+
+</html>

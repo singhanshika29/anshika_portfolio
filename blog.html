@@ -1,0 +1,283 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>BLOG</title>
+    <link rel="stylesheet" href="./style.css">
+<link href="https://fonts.cdnfonts.com/css/glacial-indifference-2" rel="stylesheet">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600;700&display=swap" rel="stylesheet">
+    
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet">
+    
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
+    
+    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
+        <style>
+                        .nav-text {
+            --primary-dark: #000000;
+            --accent-teal: #031215;
+            --text-gray: #555;
+            --light-bg: #faf8f8;
+            --transition: all 0.3s ease-in-out;
+        }
+
+        body {
+            font-family: 'Poppins', sans-serif;
+            overflow-x: hidden;
+            scroll-behavior: smooth;
+        }
+
+        .navbar {
+            background: rgba(255, 255, 255, 0.95);
+            backdrop-filter: blur(10px);
+            box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1);
+            transition: var(--transition);
+        }
+
+        .navbar-brand img {
+            max-height: 90px;
+            transition: transform 0.3s;
+        }
+
+        .navbar-brand:hover img {
+            transform: scale(1.1);
+        }
+
+        .nav-link {
+            font-weight: 600;
+            color: var(--primary-dark) !important;
+            margin: 0 10px;
+            position: relative;
+        }
+
+        .nav-link::after {
+            content: '';
+            position: absolute;
+            width: 0;
+            height: 2px;
+            bottom: 0;
+            left: 0;
+            background-color: var(--accent-teal);
+            transition: var(--transition);
+        }
+
+        .nav-link:hover::after {
+            width: 100%;
+        }
+
+        .btn-contact-nav {
+            background-color: var(--primary-dark);
+            color: white !important;
+            border-radius: 25px;
+            padding: 8px 25px;
+            transition: var(--transition);
+        }
+
+        </style>
+</head>
+
+<body>
+    <section class="nav-text">
+        <nav class="navbar navbar-expand-lg sticky-top">
+            <div class="container">
+                <a class="navbar-brand" href="#">
+                    <img src="./image/unnamed__2_-removebg-preview.png" width="120" alt="Logo">
+                </a>
+                <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav">
+                    <span class="navbar-toggler-icon"></span>
+                </button>
+                <div class="collapse navbar-collapse" id="navbarNav">
+                    <ul class="navbar-nav mx-auto">
+                        <li class="nav-item"><a class="nav-link" href="index.html">Home</a></li>
+                        <li class="nav-item"><a class="nav-link" href="about.html">About</a></li>
+                        <li class="nav-item"><a class="nav-link" href="skills.html">Services</a></li>
+                        <li class="nav-item"><a class="nav-link" href="./anshika_cv_.pdf" download>Resume</a></li>  
+                        <li class="nav-item"><a class="nav-link" href="blog.html">Blog</a></li>
+                    </ul>
+                    <a href="contact.html" class="btn btn-contact-nav">Contact Us</a>
+                </div>
+            </div>
+        </nav>
+    </section>
+    <!-- Blog Section -->
+    <section class="container-fluid blog-text">
+        <div class="text-center  blog-text-2 my-5">
+
+            <h1 class="">INSIGHTS & INNOVATIONS</h1>
+            <h6 class="my-3">Stay Ahead with the Latest Trends</h6>
+            <span>Explore our expert blogs on digital marketing, web development, SEO, and more. Stay informed, <br>
+                inspired, and ahead of the competition</span>
+
+        </div>
+        <div class="row blog-image justify-content-center align-items-center my-5">
+            <div class="col-4 card" style="width: 26rem;">
+                <img src="./image/Ai-3.png" class="card-img-top" alt="...">
+                <div class="card-body">
+                    <h5>Optimizing Web Development Through Artifical Intelligence</h5>
+                    <p class="card-text">AI optimizes web development by automating coding, debugging, and testing. It
+                        enhances efficiency, reduces errors, personalizes user experiences, and speeds up project
+                        delivery, making development smarter and more reliable.</p>
+                    <a href="#" class="btn btn-contactt " role="button">Read More</a>
+                </div>
+            </div>
+            <div class=" col-4 card" style="width: 25rem;">
+                <img src="./image/desging.png" class="card-img-top" alt="...">
+                <div class="card-body">
+                    <h5>AI Revolutionizing Modern Web Design</h5>
+                    <p class="card-text">AI revolutionizes modern web design by generating layouts, suggesting colors,
+                        enhancing UX, and ensuring accessibility. It empowers designers with automation, creativity, and
+                        personalization, delivering visually engaging and user-friendly websites efficiently.</p>
+                    <a href="#" class="btn btn-contactt " role="button">Read More</a>
+                </div>
+            </div>
+            <div class=" col-4 card " style="width: 26rem;">
+                <img src="./image/ai-4.png" class="card-img-top" alt="...">
+                <div class="card-body">
+                    <h5>How AI Shapes Web Design and Development</h5>
+                    <p class="card-text">I shapes web design and development by automating coding, enhancing UX,
+                        personalizing content, and streamlining testing. It empowers creators to build smarter, faster,
+                        and more engaging digital experiences efficiently.</p>
+                    <a href="#" class="btn btn-contactt " role="button">Read more</a>
+                </div>
+            </div>
+        </div>
+        <div class="row blog-image justify-content-center align-items-center my-5">
+            <div class="col-4 card" style="width: 26rem;">
+                <img src="./image/ai gen.png" class="card-img-top" alt="...">
+                <div class="card-body">
+                    <h5>Dark Web Threats and How to Protect Yourself</h5>
+                    <p class="card-text">The Dark Web is a hidden segment of the internet, accessible only with
+                        specialized tools. It hosts anonymous forums and marketplaces, offering both opportunities and
+                        significant risks, making cybersecurity awareness and cautious navigation essential for users.
+                    </p>
+                    <a href="#" class="btn btn-contactt " role="button">Read More</a>
+                </div>
+            </div>
+            <div class=" col-4 card" style="width: 26rem;">
+                <img src="./image/wordpress.png" class="card-img-top" alt="...">
+                <div class="card-body">
+                    <h5>Developers Shaping Websites and Digital Strategies</h5>
+                    <p class="card-text">Developers are essential in creating websites that integrate seamlessly with
+                        digital marketing strategies. By leveraging AI, coding expertise, and analytics, they enhance
+                        user experience, drive engagement, and boost online visibility, ensuring business growth and
+                        impactful digital presence.</p>
+                    <a href="#" class="btn btn-contactt " role="button">Read More</a>
+                </div>
+            </div>
+            <div class=" col-4 card " style="width: 26rem;">
+                <img src="./image/tools.png" class="card-img-top" alt="...">
+                <div class="card-body">
+                    <h5>Smarter Design Through AI Image Generation</h5>
+                    <p class="card-text">AI image generation tools transform creativity by producing high-quality
+                        visuals instantly. They help designers, marketers, and creators save time, explore ideas, and
+                        generate unique, professional images effortlessly.</p>
+                    <a href="#" class="btn btn-contactt " role="button">Read more</a>
+                </div>
+            </div>
+            <div class="row blog-image justify-content-center align-items-center my-5">
+                <div class="col-4 card" style="width: 26rem;">
+                    <img src="./image/graphic.png" class="card-img-top" alt="...">
+                    <div class="card-body">
+                        <h5>AI Improving Creativity and Efficiency in Design</h5>
+                        <p class="card-text">AI revolutionizes graphic design by automating repetitive tasks, generating
+                            creative layouts, and suggesting color palettes. Designers can focus on innovation,
+                            improving efficiency, creativity, and delivering visually stunning, professional content
+                            faster.</p>
+                        <a href="#" class="btn btn-contactt " role="button">Read More</a>
+                    </div>
+                </div>
+                <div class=" col-4 card" style="width: 26rem;">
+                    <img src="./image/web.png" class="card-img-top" alt="...">
+                    <div class="card-body">
+                        <h5>WordPress: A Powerful Website Solution</h5>
+                        <p class="card-text">WordPress simplifies website management by offering user-friendly tools,
+                            customizable themes, and plugins. It empowers bloggers and businesses to create, update, and
+                            optimize websites efficiently, without needing advanced technical skills.</p>
+                        <a href="#" class="btn btn-contactt " role="button">Read More</a>
+                    </div>
+                </div>
+                <div class=" col-4 card " style="width: 26rem;">
+                    <img src="./image/gemini-ing.png" class="card-img-top" alt="...">
+                    <div class="card-body">
+                        <h5>Exploring the Power of Gemini AI</h5>
+                        <p class="card-text">Gemini AI, Google’s advanced model, enhances digital experiences by
+                            enabling smarter automation, improved data analysis, and personalized solutions. It empowers
+                            developers and businesses to innovate efficiently and drive meaningful impact.</p>
+                        <a href="#" class="btn btn-contactt " role="button">Read more</a>
+                    </div>
+                </div>
+    </section>
+    <footer class="footer-dark ">
+        <div class="container">
+            <div class="row g-4">
+                <div class="col-6 col-md-3 col-lg-2">
+                    <h5 class="footer-heading">Quick Link</h5>
+                    <ul class="list-unstyled footer-links">
+                        <li><a href="index.html">Home</a></li>
+                        <li><a href="about.html">About</a></li>
+                        <li><a href="skills.html">Services</a></li>
+                        <li><a href="#">Portfolio</a></li>
+                        <li><a href="contact.html">Contact</a></li>
+                    </ul>
+                </div>
+
+                <div class="col-6 col-md-3 col-lg-2">
+                    <h5 class="footer-heading">Services</h5>
+                    <ul class="list-unstyled footer-links">
+                        <li><a href="#">Web Design</a></li>
+                        <li><a href="#">Web Development</a></li>
+                        <li><a href="#">Mobile Development</a></li>
+                        <li><a href="#">Digital Marketing</a></li>
+                    </ul>
+                </div>
+
+                <div class="col-md-6 col-lg-3">
+                    <h5 class="footer-heading">Contact</h5>
+                    <div class="contact-details">
+                        <p><i class="fas fa-envelope me-2"></i> singhanshika29.as@gmail.com</p>
+                        <p><i class="fas fa-phone me-2"></i> +919889747955</p>
+                        <div class="social-box mt-3">
+                            <a href="#" class="social-icon"><i class="fab fa-facebook-f"></i></a>
+                            <a href="#" class="social-icon"><i class="fab fa-linkedin-in"></i></a>
+                            <a href="#" class="social-icon"><i class="fab fa-github"></i></a>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="col-md-12 col-lg-5">
+                    <div class="consult-card">
+                        <h3 class="mb-4">Let's Make Consultation With Us!</h3>
+                        <form id="consultationForm">
+                            <div class="custom-input-group">
+                                <input type="email" class="form-control text-light" placeholder="Enter your email"
+                                    required>
+                                <button class="btn btn-send bg-warning" type="submit">
+                                    <i class="fas fa-paper-plane "></i>
+                                </button>
+                            </div>
+                        </form>
+                    </div>
+                </div>
+            </div>
+
+            <hr class="mt-5 footer-divider">
+            <div class="text-center copyright-text">
+                <p class="mb-0">&copy; Copyright <span id="year"></span> <span class="text-warning">Anshika Singh</span>
+                    All Rights Reserved</p>
+            </div>
+        </div>
+    </footer>
+
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"></script>
+    <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+    <script>
+        AOS.init({ duration: 1000, once: true });
+        document.getElementById('year').textContent = new Date().getFullYear();
+    </script>
+</body>
+
+</html>

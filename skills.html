@@ -1,0 +1,550 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Skills Section</title>
+    <title>Document</title>
+    <link rel="stylesheet" href="./style.css">
+<link href="https://fonts.cdnfonts.com/css/glacial-indifference-2" rel="stylesheet">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600;700&display=swap" rel="stylesheet">
+    
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet">
+    
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
+    
+    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
+           <style>
+        /* --- General & Body --- */
+html {
+    overflow-x: hidden;
+    scroll-behavior: smooth;
+}
+
+body {
+    background-color: #f4f7f9; /* A lighter, cooler background color */
+    font-family: "Poppins", sans-serif;
+}
+
+
+/* --- Navbar Section (Refined) --- */
+            .nav-text {
+            --primary-dark: #000000;
+            --accent-teal: #031215;
+            --text-gray: #555;
+            --light-bg: #faf8f8;
+            --transition: all 0.3s ease-in-out;
+        }
+
+        body {
+            font-family: 'Poppins', sans-serif;
+            overflow-x: hidden;
+            scroll-behavior: smooth;
+        }
+
+        .navbar {
+            background: rgba(255, 255, 255, 0.95);
+            backdrop-filter: blur(10px);
+            box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1);
+            transition: var(--transition);
+        }
+
+        .navbar-brand img {
+            max-height: 90px;
+            transition: transform 0.3s;
+        }
+
+        .navbar-brand:hover img {
+            transform: scale(1.1);
+        }
+
+        .nav-link {
+            font-weight: 600;
+            color: var(--primary-dark) !important;
+            margin: 0 10px;
+            position: relative;
+        }
+
+        .nav-link::after {
+            content: '';
+            position: absolute;
+            width: 0;
+            height: 2px;
+            bottom: 0;
+            left: 0;
+            background-color: var(--accent-teal);
+            transition: var(--transition);
+        }
+
+        .nav-link:hover::after {
+            width: 100%;
+        }
+
+        .btn-contact-nav {
+            background-color: var(--primary-dark);
+            color: white !important;
+            border-radius: 25px;
+            padding: 8px 25px;
+            transition: var(--transition);
+        }
+        .btn-contact-nav:hover {
+            background-color: var(--accent-teal);
+            color: white !important;
+        }
+
+/* --- Services Section --- */
+.services-section {
+    padding: 100px 0;
+    background-color: #f4f7f9;
+}
+
+.services-header {
+    margin-bottom: 60px;
+}
+
+.services-header h5 {
+    color: #0066cc;
+    font-weight: 700;
+    letter-spacing: 1.5px;
+    text-transform: uppercase;
+    font-family: "Poppins", sans-serif;
+}
+
+.services-header h2 {
+    font-family: 'Glacial Indifference', sans-serif;
+    font-size: 3rem;
+    font-weight: 800;
+    color: #212529;
+    margin-top: 10px;
+}
+
+.services-header span {
+    font-family: "Poppins", sans-serif;
+    color: #6c757d;
+    max-width: 600px;
+    margin: 15px auto 0;
+    display: block;
+    line-height: 1.6;
+}
+
+/* --- Attractive Accordion Styling --- */
+.accordion {
+    max-width: 900px;
+    margin: 0 auto;
+}
+
+.accordion-item {
+    background-color: #ffffff;
+    border: none;
+    margin-bottom: 1.25rem;
+    border-radius: 10px !important;
+    box-shadow: 0 10px 30px rgba(0, 0, 0, 0.07);
+    transition: all 0.4s ease;
+
+    /* Animation */
+    opacity: 0;
+    transform: translateY(30px);
+    animation: slideUpFade 0.6s forwards ease-out;
+}
+
+.accordion-item:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 15px 35px rgba(0, 0, 0, 0.1);
+}
+
+/* Animation Keyframes */
+@keyframes slideUpFade {
+    to {
+        opacity: 1;
+        transform: translateY(0);
+    }
+}
+.accordion-item:nth-child(1) { animation-delay: 0s; }
+.accordion-item:nth-child(2) { animation-delay: 0.2s; }
+.accordion-item:nth-child(3) { animation-delay: 0.4s; }
+.accordion-item:nth-child(4) { animation-delay: 0.6s; }
+
+.accordion-header {
+    border-radius: 10px !important;
+}
+
+.accordion-button {
+    font-family: "Poppins", sans-serif;
+    font-size: 1.2rem;
+    font-weight: 600;
+    color: #2a3035;
+    background-color: #ffffff;
+    padding: 1.5rem;
+    border-radius: 10px !important;
+    transition: background-color 0.4s ease;
+}
+
+.accordion-button i {
+    font-size: 1.5rem;
+    margin-right: 15px;
+    color: #0066cc;
+    transition: color 0.4s ease;
+}
+
+.accordion-button:not(.collapsed) {
+    color: #ffffff;
+    background: linear-gradient(90deg, #007bff 0%, #0056b3 100%);
+    box-shadow: none;
+}
+
+.accordion-button:not(.collapsed) i {
+    color: #ffffff;
+}
+
+/* Remove the default focus box-shadow and use our hover effect */
+.accordion-button:focus {
+    box-shadow: none;
+}
+
+.accordion-body {
+    padding: 1.5rem 2rem;
+    font-size: 1rem;
+    line-height: 1.7;
+    color: #555;
+    background-color: #fdfdfd;
+    border-bottom-left-radius: 10px;
+    border-bottom-right-radius: 10px;
+}
+
+/* --- Footer (Copied from original) --- */
+.footer-custom {
+    background-color: #E4F1DD;
+    color: #242222;
+    padding: 60px 0 20px 0;
+}
+
+.footer-custom h5 {
+    color: #032826;
+    font-weight: 600;
+    margin-bottom: 20px;
+}
+
+.footer-custom a {
+    color: #1b1a1a;
+    text-decoration: none;
+    transition: color 0.3s ease;
+}
+
+.footer-custom a:hover {
+    color: #99a8a7;
+}
+
+.footer-custom .social-icons a {
+    display: inline-flex;
+    justify-content: center;
+    align-items: center;
+    width: 40px;
+    height: 40px;
+    background-color: #0c0a0a;
+    color: #dce0eb;
+    border-radius: 5px;
+    margin-right: 10px;
+    font-size: 18px;
+}
+
+.footer-custom .social-icons a:hover {
+    background-color: #05334c;
+    color: #ffffff;
+}
+   .contact-section {
+            background-color:white;
+            padding: 1rem 0;
+        }
+
+        .contact-title {
+            font-weight: 700;
+            font-size: 2.5rem;
+            text-transform: uppercase;
+            background: linear-gradient(90deg, #3a3a32, #0b0909);
+            -webkit-background-clip: text;
+            -webkit-text-fill-color: transparent;
+            background-clip: text;
+        
+            margin-bottom: 4rem;
+        }
+
+        .contact-form .form-group {
+            margin-bottom: 3rem;
+        }
+
+        .contact-form .form-label {
+            color: #000000;
+            font-size: 0.9rem;
+            text-transform: uppercase;
+            letter-spacing: 1px;
+            margin-bottom: 1rem;
+        }
+
+        .form-control-custom {
+            background-color: transparent;
+            border: none;
+            border-bottom: 1px solid #555;
+            border-radius: 0;
+            color: #fff;
+            padding: 0.5rem 0;
+            font-size: 1.1rem;
+        }
+
+        .form-control-custom:focus {
+            background-color: transparent;
+            color: #0e0c0c;
+            border-color: #000000;
+            box-shadow: none;
+        }
+
+        .btn-send {
+            background-color: transparent;
+            border: 2px solid #0a0909;
+            color: #080807;
+            padding: 0.8rem 2.5rem;
+            font-weight: 500;
+            letter-spacing: 1px;
+            text-transform: uppercase;
+            transition: all 0.3s ease;
+            border-radius: 5px;
+        }
+
+        .btn-send:hover {
+            background-color: #060403;
+            color: #edf3fa;
+        }
+        
+.service-card {
+    transition: all 0.3s ease-in-out;
+    border: 1px solid transparent;
+    height: 100%;
+}
+
+.service-card:hover {
+    transform: translateY(-10px);
+    box-shadow: 0 15px 30px rgba(0,0,0,0.1) !important;
+    border-color: #000000;
+}
+
+.icon-box {
+    min-width: 60px;
+    height: 60px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background: #000000;
+    border-radius: 12px;
+    transition: background 0.3s ease;
+}
+
+.service-card:hover .icon-box {
+    background: #3b3939;
+}
+
+.service-card:hover .icon-box i {
+    color: #042636 !important;
+}
+
+.btn-primary {
+    padding: 10px 25px;
+    font-weight: 600;
+}
+    </style>
+</head>
+
+<body>
+    <section class="nav-text">
+        <nav class="navbar navbar-expand-lg sticky-top">
+            <div class="container">
+                <a class="navbar-brand" href="#">
+                    <img src="./image/unnamed__2_-removebg-preview.png" width="120" alt="Logo">
+                </a>
+                <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav">
+                    <span class="navbar-toggler-icon"></span>
+                </button>
+                <div class="collapse navbar-collapse" id="navbarNav">
+                    <ul class="navbar-nav mx-auto">
+                        <li class="nav-item"><a class="nav-link" href="index.html">Home</a></li>
+                        <li class="nav-item"><a class="nav-link" href="about.html">About</a></li>
+                        <li class="nav-item"><a class="nav-link" href="skills.html">Services</a></li>
+                        <li class="nav-item"><a class="nav-link" href="./anshika_cv_.pdf" download>Resume</a></li>
+                        <li class="nav-item"><a class="nav-link" href="blog.html">Blog</a></li>
+                    </ul>
+                    <a href="contact.html" class="btn btn-contact-nav">Contact Us</a>
+                </div>
+            </div>
+        </nav>
+    </section>
+
+    <!-- Skills Section -->
+
+    <section>
+        <div class="skills-section-2 text-center my-5">
+        <h5 >..SERVICES</h5>
+        <h2 >What I Do</h2>
+        <span >A detailed overview of my specialized services and my approach to delivering exceptional results.</span></div>
+
+            </div>
+            </section>
+            <section class="container">
+                 <div class="row g-4">
+                <div class="col-md-6">
+                    <div class="service-card d-flex align-items-start p-4 bg-white shadow-sm rounded-4">
+                        <div class="icon-box me-4">
+                            <i class="fa-solid fa-wand-magic-sparkles fa-2x text-light"></i>
+                        </div>
+                        <div>
+                            <h4 class="fw-bold text-center">Web Design</h4>
+                            <p class="text-muted text-center">Proficient in creating visually appealing and user-centric websites by combining principles of UI/UX design. I focus on responsive layouts that ensure a seamless experience across all devices.</p>
+                            
+                        </div>
+                    </div>
+                </div>
+
+                <div class="col-md-6">
+                    <div class="service-card d-flex align-items-start p-4 bg-white shadow-sm rounded-4">
+                        <div class="icon-box me-4">
+                            <i class="fa-solid fa-code fa-2x text-light"></i>
+                        </div>
+                        <div>
+                            <h4 class="fw-bold text-center">Web Development</h4>
+                            <p class="text-muted text-center">Building responsive, secure, and high-performing websites. From front-end design to back-end functionality, I create user-friendly digital solutions with clean coding practices.</p>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="col-md-6">
+                    <div class="service-card d-flex align-items-start p-4 bg-white shadow-sm rounded-4">
+                        <div class="icon-box me-4">
+                            <i class="fa-solid fa-mobile-screen-button fa-2x text-light"></i>
+                        </div>
+                        <div>
+                            <h4 class="fw-bold text-center">Mobile Development</h4>
+                            <p class="text-muted text-center">Delivering innovative and user-friendly mobile applications for Android and iOS. I focus on smooth performance and reliable features that enhance user engagement.</p>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="col-md-6">
+                    <div class="service-card d-flex align-items-start p-4 bg-white shadow-sm rounded-4">
+                        <div class="icon-box me-4">
+                            <i class="fa-solid fa-chart-line fa-2x text-light"></i>
+                        </div>
+                        <div>
+                            <h4 class="fw-bold text-center">Digital Marketing</h4>
+                            <p class="text-muted text-center">Building a strong online presence through SEO, content marketing, and paid advertising. Data-driven insights help businesses reach more customers effectively.</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+ 
+    </section>
+     <!-- Contact Section -->
+        <section class="contact-section mt-4">
+            <div class="container">
+                <div class="row justify-content-center">
+                    <div class="col-lg-8">
+                        <h2 class="text-center contact-title">CONTACT ME</h2>
+                        <form class="contact-form">
+                            <div class="row">
+                                <div class="col-md-6">
+                                    <div class="form-group">
+                                        <label for="name" class="form-label">Name *</label>
+                                        <input type="text" class="form-control form-control-custom" id="name" required>
+                                    </div>
+                                </div>
+                                <div class="col-md-6">
+                                    <div class="form-group">
+                                        <label for="email" class="form-label">Email *</label>
+                                        <input type="email" class="form-control form-control-custom" id="email"
+                                            required>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="form-group">
+                                <label for="message" class="form-label">Message *</label>
+                                <textarea class="form-control form-control-custom" id="message" rows="4"
+                                    required></textarea>
+                            </div>
+                              <div class="text-center mt-5">
+                            <button type="submit" class="btn submit-btn">Send Message</button>
+                        </div>
+                        </form>
+                    </div>
+                </div>
+            </div>
+        </section>
+ <footer class="footer-dark py-5">
+        <div class="container">
+            <div class="row g-4">
+                <div class="col-6 col-md-3 col-lg-2">
+                    <h5 class="footer-heading">Quick Link</h5>
+                    <ul class="list-unstyled footer-links">
+                        <li><a href="index.html">Home</a></li>
+                        <li><a href="about.html">About</a></li>
+                        <li><a href="skills.html">Services</a></li>
+                        <li><a href="#">Portfolio</a></li>
+                        <li><a href="contact.html">Contact</a></li>
+                    </ul>
+                </div>
+
+                <div class="col-6 col-md-3 col-lg-2">
+                    <h5 class="footer-heading">Services</h5>
+                    <ul class="list-unstyled footer-links">
+                        <li><a href="#">Web Design</a></li>
+                        <li><a href="#">Web Development</a></li>
+                        <li><a href="#">Mobile Development</a></li>
+                        <li><a href="#">Digital Marketing</a></li>
+                    </ul>
+                </div>
+
+                <div class="col-md-6 col-lg-3">
+                    <h5 class="footer-heading">Contact</h5>
+                    <div class="contact-details">
+                        <p><i class="fas fa-envelope me-2"></i> singhanshika29.as@gmail.com</p>
+                        <p><i class="fas fa-phone me-2"></i> +919889747955</p>
+                        <div class="social-box mt-3">
+                            <a href="#" class="social-icon"><i class="fab fa-facebook-f"></i></a>
+                            <a href="#" class="social-icon"><i class="fab fa-linkedin-in"></i></a>
+                            <a href="#" class="social-icon"><i class="fab fa-github"></i></a>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="col-md-12 col-lg-5">
+                    <div class="consult-card">
+                        <h3 class="mb-4">Let's Make Consultation With Us!</h3>
+                        <form id="consultationForm">
+                            <div class="custom-input-group">
+                                <input type="email" class="form-control text-light" placeholder="Enter your email"
+                                    required>
+                                <button class="btn btn-send bg-warning" type="submit">
+                                    <i class="fas fa-paper-plane "></i>
+                                </button>
+                            </div>
+                        </form>
+                    </div>
+                </div>
+            </div>
+
+            <hr class="mt-5 footer-divider">
+            <div class="text-center copyright-text">
+                <p class="mb-0">&copy; Copyright <span id="year"></span> <span class="text-warning">Anshika Singh</span>
+                    All Rights Reserved</p>
+            </div>
+        </div>
+    </footer>
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"></script>
+    <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+    <script>
+        AOS.init({ duration: 1000, once: true });
+        document.getElementById('year').textContent = new Date().getFullYear();
+    </script>
+</body>
+
+</html>
