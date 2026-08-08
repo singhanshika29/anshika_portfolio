@@ -6,7 +6,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
     <link rel="stylesheet" href="./style.css">
-<link href="https://fonts.cdnfonts.com/css/glacial-indifference-2" rel="stylesheet">
+    <link href="https://fonts.cdnfonts.com/css/glacial-indifference-2" rel="stylesheet">
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600;700&display=swap" rel="stylesheet">
@@ -76,13 +76,11 @@
             padding: 8px 25px;
             transition: var(--transition);
         }
-.btn-contact-nav:hover {
+        .btn-contact-nav:hover {
             background-color: var(--accent-teal);
             color: rgb(255, 255, 255) !important;
             transform: translateY(-3px);
         }
-
-
 
         /* --- Hero/About Section --- */
         .about-section {
@@ -113,29 +111,36 @@
             transform: translate(-10px, -10px);
             box-shadow: 30px 30px 0px var(--primary-dark);
         }
-        .about-section2 {
-    display: flex;
-    flex-wrap: wrap;
-    align-items: center;
-}
 
-/* Mobile Devices (Stacked) */
-@media (max-width: 767px) {
-    .about-section2 .col-6 {
-        flex: 0 0 100%; /* Make each div 100% width */
-        max-width: 100%;
-        text-align: center; /* Optional: Centers text for better mobile look */
-        margin-bottom: 20px;
-    }
+        /* Responsive adjustments for About Section */
+        @media (max-width: 991.98px) {
+            .about-section2 {
+                padding: 50px 5%;
+            }
+        }
 
-    .about-section2 h1 {
-        font-size: 1.8rem; /* Shrink text slightly for small screens */
-    }
+        @media (max-width: 767.98px) {
+            .about-section2 {
+                padding: 40px 20px;
+            }
 
-    .about-section2 .remove {
-        order: -1; /* Optional: Moves the image above the text on mobile */
-    }
-}
+            .about-section2 .paragraph h1 {
+                font-size: 1.8rem;
+            }
+
+            .about-section2 .paragraph h2 {
+                font-size: 1.4rem;
+            }
+
+            .about-section2 .paragraph p {
+                font-size: 0.95rem;
+            }
+
+            .about-section2 .remove img {
+                max-width: 80%;
+                margin: 0 auto;
+            }
+        }
     </style>
 
 </head>
@@ -171,36 +176,34 @@
             </div>
         </header>
 
+        <!-- Responsive About Section -->
+        <div class="container">
+            <div class="row about-section2 align-items-center">
+                <div class="col-12 col-md-6 paragraph order-2 order-md-1">
+                    <h1>Web Developer | Digital </h1>
+                    <h2> Marketing Enthusiast | AI</h2>
+                    <p>I design and develop responsive, visually appealing websites, optimize digital presence through
+                        strategic
+                        marketing, and leverage AI to deliver innovative, data-driven solutions. My work blends creativity,
+                        technology, and strategy to enhance user experience, boost engagement, and drive measurable business
+                        growth.</p>
 
-        <div class="row about-section2">
-            <div class="col-6 paragraph">
-                <h1>Web Developer | Digital </h1>
-                <h2> Marketing Enthusiast | AI</h2>
-                <p>I design and develop responsive, visually appealing websites, optimize digital presence through
-                    strategic
-                    marketing, and leverage AI to deliver innovative, data-driven solutions. My work blends creativity,
-                    technology, and strategy to enhance user experience, boost engagement, and drive measurable business
-                    growth.</p>
-
-                <a target="_blank" href="./anshika_cv_.pdf" download class="btn btn-contact buttonn "
-                    role="button">DOWNLOAD CV</a>
-
-            </div>
-            <div class="col-6 remove ">
-                <img src="./image/file_00000000249c82088dea738a2e079159.png" alt="Anshika Singh" class="img-fluid img-thumbnail">
+                    <a target="_blank" href="./anshika_cv_.pdf" download class="btn btn-contact buttonn"
+                        role="button">DOWNLOAD CV</a>
+                </div>
+                <div class="col-12 col-md-6 remove text-center mb-4 mb-md-0 order-1 order-md-2">
+                    <img src="./image/file_00000000249c82088dea738a2e079159.png" alt="Anshika Singh" class="img-fluid img-thumbnail">
+                </div>
             </div>
         </div>
 
     </section>
-
 
     <section class="header-title-2">
         <div class="container-fluid p-5">
             <div class="row">
                 <div class="col-12">
                     <h3 class="header-title text-center ">Skills</h3>
-
-
                 </div>
                 <div class="mx-auto" style="width: 50px; height: 3px; background: #d4af37; margin-bottom: 1px;"></div>
             </div>
@@ -243,125 +246,127 @@
                             <li> Git/GitHub</li>
                             <li>Figma</li>
                             <li>AI Tools</li>
-                                <li>Wordpress</li>
+                            <li>Wordpress</li>
                         </ul>
                     </div>
                 </div>
 
             </div>
     </section>
+
     <section>
         <div>
             <h3 class="text-center text-dark work-head">My Work</h3>
         </div>
         <div class="mx-auto" style="width: 50px; height: 3px; background: #d4af37; margin-bottom: 2px;"></div>
-       <div class="container py-5">
-    <div class="row g-4">
-        
-        <div class="col-12 col-sm-6 col-md-3">
-            <div class="logo-card">
-                <div class="image-box">
-                    <img src="./image/logo.jpeg" alt="">
+        <div class="container py-5">
+            <div class="row g-4">
+                
+                <div class="col-12 col-sm-6 col-md-3">
+                    <div class="logo-card">
+                        <div class="image-box">
+                            <img src="./image/logo.jpeg" alt="">
+                        </div>
+                        <div class="card-body-custom text-center">
+                            <h5>Dento Clinic</h5>
+                            <a href="#" class="btn btn-outline-dark btn-sm px-4">Live Preview</a>
+                        </div>
+                    </div>
                 </div>
-                <div class="card-body-custom text-center">
-                    <h5>Dento Clinic</h5>
-                    <a href="#" class="btn btn-outline-dark btn-sm px-4">Live Preview</a>
+
+                <div class="col-12 col-sm-6 col-md-3">
+                    <div class="logo-card">
+                        <div class="image-box">
+                            <img src="./image/phoenix-logo-1-scaled-e1764781592550.png" alt="">
+                        </div>
+                        <div class="card-body-custom text-center">
+                            <h5>Phoenix Entertainment</h5>
+                            <a href="#" class="btn btn-outline-dark  btn-sm px-4">Live Preview</a>
+                        </div>
+                    </div>
                 </div>
+
+                <div class="col-12 col-sm-6 col-md-3">
+                    <div class="logo-card">
+                        <div class="image-box">
+                            <img src="./image/unnamed (2).png" alt="">
+                        </div>
+                        <div class="card-body-custom text-center">
+                            <h5>Portfolio</h5>
+                            <a href="#" class="btn btn-outline-dark btn-sm px-4">Live Preview</a>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="col-12 col-sm-6 col-md-3">
+                    <div class="logo-card">
+                        <div class="image-box">
+                            <img src="./image/csb.jpg" alt="">
+                        </div>
+                        <div class="card-body-custom text-center">
+                            <h5 class="text-dark">Chai Sutta Bar</h5>
+                            <a href="#" class="btn btn-outline-dark btn-sm px-4">Live Preview</a>
+                        </div>
+                    </div>
+                </div>
+
             </div>
         </div>
+        <div class="container">
+            <div class="row g-4">
+                
+                <div class="col-12 col-sm-6 col-md-3">
+                    <div class="logo-card">
+                        <div class="image-box">
+                            <img src="./image/tic tac toe.jpg" alt="">
+                        </div>
+                        <div class="card-body-custom text-center">
+                            <h5>Tic Tac Toe</h5>
+                            <a href="#" class="btn btn-outline-dark btn-sm px-4">Live Preview</a>
+                        </div>
+                    </div>
+                </div>
 
-        <div class="col-12 col-sm-6 col-md-3">
-            <div class="logo-card">
-                <div class="image-box">
-                    <img src="./image/phoenix-logo-1-scaled-e1764781592550.png" alt="">
+                <div class="col-12 col-sm-6 col-md-3">
+                    <div class="logo-card">
+                        <div class="image-box">
+                            <img src="./image/weather.jpg" alt="">
+                        </div>
+                        <div class="card-body-custom text-center">
+                            <h5>Weather API key</h5>
+                            <a href="#" class="btn btn-outline-dark btn-sm px-4">Live Preview</a>
+                        </div>
+                    </div>
                 </div>
-                <div class="card-body-custom text-center">
-                    <h5>Phoenix Entertainment</h5>
-                    <a href="#" class="btn btn-outline-dark  btn-sm px-4">Live Preview</a>
+
+                <div class="col-12 col-sm-6 col-md-3">
+                    <div class="logo-card">
+                        <div class="image-box">
+                            <img src="./image/87f2f8f7-5d69-4b87-a8c2-4131b5a7842b.jpg" alt="">
+                        </div>
+                        <div class="card-body-custom text-center">
+                            <h5>Funnel portfolio</h5>
+                            <a href="#" class="btn btn-outline-dark btn-sm px-4">Live Preview</a>
+                        </div>
+                    </div>
                 </div>
+
+                <div class="col-12 col-sm-6 col-md-3">
+                    <div class="logo-card">
+                        <div class="image-box">
+                            <img src="./image/dashboard.jpg" alt="">
+                        </div>
+                        <div class="card-body-custom text-center">
+                            <h5 class="text-dark">Dashboard</h5>
+                            <a href="#" class="btn btn-outline-dark btn-sm px-4">Live Preview</a>
+                        </div>
+                    </div>
+                </div>
+
             </div>
         </div>
-
-        <div class="col-12 col-sm-6 col-md-3">
-            <div class="logo-card">
-                <div class="image-box">
-                    <img src="./image/unnamed (2).png" alt="">
-                </div>
-                <div class="card-body-custom text-center">
-                    <h5>Portfolio</h5>
-                    <a href="#" class="btn btn-outline-dark btn-sm px-4">Live Preview</a>
-                </div>
-            </div>
-        </div>
-
-        <div class="col-12 col-sm-6 col-md-3">
-            <div class="logo-card">
-                <div class="image-box">
-                    <img src="./image/csb.jpg" alt="">
-                </div>
-                <div class="card-body-custom text-center">
-                    <h5 class="text-dark">Chai Sutta Bar</h5>
-                    <a href="#" class="btn btn-outline-dark btn-sm px-4">Live Preview</a>
-                </div>
-            </div>
-        </div>
-
-    </div>
-</div>
-<div class="container">
-    <div class="row g-4">
-        
-        <div class="col-12 col-sm-6 col-md-3">
-            <div class="logo-card">
-                <div class="image-box">
-                    <img src="./image/tic tac toe.jpg" alt="">
-                </div>
-                <div class="card-body-custom text-center">
-                    <h5>Tic Tac Toe</h5>
-                    <a href="#" class="btn btn-outline-dark btn-sm px-4">Live Preview</a>
-                </div>
-            </div>
-        </div>
-
-        <div class="col-12 col-sm-6 col-md-3">
-            <div class="logo-card">
-                <div class="image-box">
-                    <img src="./image/weather.jpg" alt="">
-                </div>
-                <div class="card-body-custom text-center">
-                    <h5>Weather API key</h5>
-                    <a href="#" class="btn btn-outline-dark btn-sm px-4">Live Preview</a>
-                </div>
-            </div>
-        </div>
-
-        <div class="col-12 col-sm-6 col-md-3">
-            <div class="logo-card">
-                <div class="image-box">
-                    <img src="./image/87f2f8f7-5d69-4b87-a8c2-4131b5a7842b.jpg" alt="">
-                </div>
-                <div class="card-body-custom text-center">
-                    <h5>Funnel portfolio</h5>
-                    <a href="#" class="btn btn-outline-dark btn-sm px-4">Live Preview</a>
-                </div>
-            </div>
-        </div>
-
-        <div class="col-12 col-sm-6 col-md-3">
-            <div class="logo-card">
-                <div class="image-box">
-                    <img src="./image/dashboard.jpg" alt="">
-                </div>
-                <div class="card-body-custom text-center">
-                    <h5 class="text-dark">Dashboard</h5>
-                    <a href="#" class="btn btn-outline-dark btn-sm px-4">Live Preview</a>
-                </div>
-            </div>
-        </div>
-
-    </div>
-</div>
     </section>
+
     <section class="resume-section py-5" id="resume" style="background-color: #fdfdfd;">
         <div class="container">
             <div class="text-center mb-5" data-aos="fade-up">
@@ -449,6 +454,7 @@
             </div>
         </div>
     </section>
+
     <section>
         <div class="container container-video mt-4">
             <div class="video-container">
@@ -461,7 +467,6 @@
                     <h1>Let’s do something new <br> with me!</h1>
 
                     <button type="button" class="button mt-2 ">Contact</button>
-
 
                 </div>
             </div>
@@ -497,7 +502,7 @@
                     <h5 class="footer-heading">Contact</h5>
                     <div class="contact-details">
                         <p><i class="fas fa-envelope me-2"></i> singhanshika29.as@gmail.com</p>
-                        <p><i class="fas fa-phone me-2"></i> ********55</p>
+                        <p><i class="fas fa-phone me-2"></i> +919889747955</p>
                         <div class="social-box mt-3">
                             <a href="#" class="social-icon"><i class="fab fa-facebook-f"></i></a>
                             <a href="#" class="social-icon"><i class="fab fa-linkedin-in"></i></a>
@@ -529,8 +534,8 @@
             </div>
         </div>
     </footer>
-   
-<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"></script>
+
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"></script>
     <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
     <script>
         AOS.init({ duration: 1000, once: true });
